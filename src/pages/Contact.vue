@@ -129,12 +129,12 @@ export default {
       try {
         await axios({
           method: "POST",
-          url: "http://localhost:1337/contacts",
+          url: "http://113.31.113.205:1337/contacts",
           data: this.form,
         });
         window.alert("发送成功");
       } catch (err) {
-        window.alert("发送失败，请售后重试");
+        window.alert("发送失败，请稍后重试");
       }
     },
   },

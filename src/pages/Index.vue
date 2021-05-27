@@ -34,13 +34,13 @@
                 {{ edge.node.title }}
               </h2>
             </g-link>
-            <p class="post-meta">
+            <!-- <p class="post-meta">
               Posted by
               <a href="#!">
                 {{ edge.node.create_by }}
               </a>
               on {{ edge.node.created_at }}
-            </p>
+            </p> -->
             <p>
               <span v-for="tag in edge.node.tags" :key="tag.id">
                 <g-link :to="'/tags/' + tag.id">
@@ -49,8 +49,8 @@
                 &nbsp;&nbsp;
               </span>
             </p>
+            <hr />
           </div>
-          <hr />
           <!-- Pager-->
           <!-- <div class="clearfix">
                     <a class="btn btn-primary float-right" href="#!">
@@ -66,7 +66,7 @@
 
 <page-query>
 query ($page: Int) {
-  posts: allStrapiPost (perPage: 2, page: $page) @paginate {
+  posts: allStrapiPost (perPage: 5, page: $page) @paginate {
     pageInfo {
       totalPages,
       currentPage

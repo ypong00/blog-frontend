@@ -3,12 +3,12 @@ const { createProxyMiddleware } = require('http-proxy-middleware')
 
 module.exports = (req, res) => {
   let target = ''
-  
+
   // 处理代理目标地址
   if (req.url.includes('/uploads')) {
-      target = 'http://113.31.113.205:1337'
+    target = 'http://113.31.113.205:1337'
   }
-  
+
   // 创建代理对象并转发请求
   createProxyMiddleware({
     target,

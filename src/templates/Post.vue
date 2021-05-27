@@ -15,8 +15,9 @@
                         <!-- <h2 class="subheading">Problems look mighty small from 150 miles up</h2> -->
                         <span class="meta">
                             Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2021
+                            {{ $page.strapiPost.created_at }}
+                            <!-- <a href="#!">Start Bootstrap</a>
+                            on August 24, 2021 -->
                         </span>
                     </div>
                 </div>
@@ -43,6 +44,7 @@ query ($id: ID!) {
     id,
     title,
     content,
+    created_at,
     cover {
       url
     }

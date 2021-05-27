@@ -190,10 +190,19 @@ header.masthead .overlay {
   opacity: 0.5;
 }
 
-header.masthead .page-heading,
-header.masthead .post-heading,
+
+header.masthead .post-heading {
+  padding: 70px 0;
+  color: white;
+}
+
+header.masthead .page-heading {
+  padding: 50px 0;
+  color: white;
+}
+
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 50px 0;
   color: white;
 }
 
@@ -201,7 +210,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 50px 0;
   }
 }
 
@@ -222,7 +231,6 @@ header.masthead .site-heading .subheading {
   font-weight: 300;
   line-height: 1.1;
   display: block;
-  margin: 10px 0 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
